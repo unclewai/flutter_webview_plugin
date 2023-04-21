@@ -392,7 +392,8 @@ class WebviewManager {
 
         webView.getSettings().setSupportMultipleWindows(supportMultipleWindows);
 
-        webView.getSettings().setAppCacheEnabled(appCacheEnabled);
+        // webView.getSettings().setAppCacheEnabled(appCacheEnabled);
+        webView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
 
         webView.getSettings().setAllowFileAccessFromFileURLs(allowFileURLs);
         webView.getSettings().setAllowUniversalAccessFromFileURLs(allowFileURLs);
